@@ -1,12 +1,9 @@
 package br.com.inovapro.miningmonitor.pools.anorak.connectors;
 
-import java.math.BigDecimal;
-
 import br.com.inovapro.miningmonitor.dao.ActivePool;
 import br.com.inovapro.miningmonitor.domain.Wallet;
-import br.com.inovapro.miningmonitor.domain.Worker;
 import br.com.inovapro.miningmonitor.pools.adapters.WalletAdapter;
-import br.com.inovapro.miningmonitor.pools.anorak.adapters.AnorakWallet2Wallet;
+import br.com.inovapro.miningmonitor.pools.anorak.adapters.AnorakWallet2WalletAdapter;
 import br.com.inovapro.miningmonitor.service.WalletComponent;
 
 /**
@@ -20,6 +17,6 @@ public class AnorakWalletComponent implements WalletComponent {
     }
 
     private WalletAdapter getWalletAdapter() {
-        return new AnorakWallet2Wallet();
+        return new AnorakWallet2WalletAdapter();
     }
 }

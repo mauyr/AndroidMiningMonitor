@@ -17,7 +17,7 @@ import br.com.inovapro.miningmonitor.pools.adapters.WalletAdapter;
  * Created by MauyrAlexandre on 18/02/2018.
  */
 
-public class AnorakWallet2Wallet implements WalletAdapter {
+public class AnorakWallet2WalletAdapter implements WalletAdapter {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public Wallet toDomain(String json) {
